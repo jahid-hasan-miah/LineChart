@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MVC Project\\LineChart\\LineChart\\LineChart.csproj": {}
+    "D:\\MVC Project\\LineChart\\LineChart\\LineChart\\LineChart.csproj": {}
   },
   "projects": {
-    "D:\\MVC Project\\LineChart\\LineChart\\LineChart.csproj": {
+    "D:\\MVC Project\\LineChart\\LineChart\\LineChart\\LineChart.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MVC Project\\LineChart\\LineChart\\LineChart.csproj",
+        "projectUniqueName": "D:\\MVC Project\\LineChart\\LineChart\\LineChart\\LineChart.csproj",
         "projectName": "LineChart",
-        "projectPath": "D:\\MVC Project\\LineChart\\LineChart\\LineChart.csproj",
+        "projectPath": "D:\\MVC Project\\LineChart\\LineChart\\LineChart\\LineChart.csproj",
         "packagesPath": "C:\\Users\\joyh3\\.nuget\\packages\\",
-        "outputPath": "D:\\MVC Project\\LineChart\\LineChart\\obj\\",
+        "outputPath": "D:\\MVC Project\\LineChart\\LineChart\\LineChart\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -61,14 +61,6 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.8, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[5.0.2, )"
-            },
-            "WebSharper.JsPDF": {
-              "target": "Package",
-              "version": "[4.7.2.203, )"
             }
           },
           "imports": [
