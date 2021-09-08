@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<div id="rdlcLine" style="height: 370px; width: 100%;"></div>
+<br />
+<script>
+    window.onload = function () {
+    var chart = new CanvasJS.Chart("rdlcLine", {
+	animationEnabled: false,
+	title: {
+		text: "Product Prices"
+	},
+    axisY: [{
+        title: "Price",
+        titleFontColor: "#0C11F7"
+	}],
+    axisX: [{
+        title: "Product",
+        titleFontColor: "#0C11F7"
+    }],
+	toolTip: {
+		shared: true
+	},
+	data: [
+		{
+		markerType:"none",
+		type: "line",
+		showInLegend: true,
+		dataPoints: @Html.Raw(ViewBag.DataPoints1)
+	},
+		{
+		markerType:"none",
+		type: "line",
+		showInLegend: true,
+		dataPoints: @Html.Raw(ViewBag.DataPoints3)
+	}
+	]
+	});
+		chart.render();
+        var canvas = $("#rdlcLine .canvasjs-chart-canvas").get(0);
+        var dataURL = canvas.toDataURL();
+        $("#exportPdf").click(function () {
+            var pdf = new jsPDF();
+            pdf.addImage(dataURL, 'JPEG', 20, 20, 170, 80);
+            pdf.save("D:\CSharpPractice\download.pdf");
+        });
+}
+</script>
+<button id="exportPdf" class="btn btn-secondary" type="button">Export as PDF</button>
